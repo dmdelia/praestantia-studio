@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PRAESTANTIA STUDIO | EST MMXXV</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Serif -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Fabric.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.3.1/fabric.min.js"></script>
+</head>
+<body>
+
+<div class="paper-overlay"></div>
+
+<header>
+
+    <div class="brand">
+
+        <div class="est">EST MMXXV</div>
+
+        <h1>
+            PRAESTANTIA UNITED
+        </h1>
+
+        <div class="claim">
+            WE DO NOT RISE TO BE SEEN. WE RISE TO BE REMEMBERED.
+        </div>
+
+    </div>
+
+    <nav>
+
+        <button>NEW</button>
+        <button>SAVE</button>
+        <button>LOAD</button>
+        <button>EXPORT</button>
+
+    </nav>
+
+</header>
+
+
+<div class="workspace">
+
+    <!-- Linke Toolbar -->
+    <aside class="left-panel">
+
+        <h2>TOOLS</h2>
+
+        <button class="tool-btn">PLAYER</button>
+        <button class="tool-btn">GOALKEEPER</button>
+        <button class="tool-btn">BALL</button>
+        <button class="tool-btn">CONE</button>
+        <button class="tool-btn">GOAL</button>
+
+        <hr>
+
+        <button class="tool-btn">PASS</button>
+        <button class="tool-btn">RUN</button>
+        <button class="tool-btn">ARROW</button>
+        <button class="tool-btn">TEXT</button>
+
+    </aside>
+
+
+    <!-- Canvas -->
+    <main class="canvas-container">
+
+        <div class="canvas-frame">
+
+            <canvas id="fieldCanvas" width="1400" height="850"></canvas>
+
+        </div>
+
+    </main>
+
+
+    <!-- Eigenschaften -->
+    <aside class="right-panel">
+
+        <h2>PROPERTIES</h2>
+
+        <div class="property">
+
+            <label>COLOR</label>
+
+            <select>
+                <option>BLACK / GOLD</option>
+                <option>WHITE</option>
+                <option>MAROON</option>
+            </select>
+
+        </div>
+
+        <div class="property">
+
+            <label>SIZE</label>
+
+            <input type="range">
+
+        </div>
+
+        <div class="property">
+
+            <label>LABEL</label>
+
+            <input type="text">
+
+        </div>
+
+    </aside>
+
+</div>
+
+
+<footer>
+
+    <div>
+        PRAESTANTIA STUDIO
+    </div>
+
+    <div>
+        INTERNAL SYSTEM
+    </div>
+
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.6.0/fabric.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/arrows.js"></script>
+<script src="js/history.js"></script>
+<script src="js/players.js"></script>
+<script src="js/selection.js"></script>
+<script src="js/toolbar.js"></script>
+
+
+
+</body>
+</html>
