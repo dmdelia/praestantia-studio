@@ -1,0 +1,385 @@
+/* ========================================
+   PRAESTANTIA UNITED
+   EST MMXXV
+   HIGH-FASHION EDITORIAL SYSTEM
+======================================== */
+
+:root{
+
+    --pri:#090909;
+    --sek:#D4AF37;
+    --ter:#F5F5F5;
+    --qua:#5B1F29;
+
+    --panel:#111111;
+    --border:rgba(212,175,55,.18);
+
+}
+
+/* ========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    background:var(--pri);
+    color:var(--ter);
+
+    font-family:'Inter',sans-serif;
+
+    overflow:hidden;
+
+}
+
+/* ========================= */
+/* PAPER TEXTURE */
+/* ========================= */
+
+.paper-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:
+            radial-gradient(circle at 20% 20%,rgba(255,255,255,.015),transparent),
+            radial-gradient(circle at 80% 60%,rgba(255,255,255,.01),transparent);
+
+    opacity:.45;
+
+    pointer-events:none;
+
+}
+
+/* ========================= */
+/* HEADER */
+/* ========================= */
+
+header{
+
+    height:120px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 60px;
+
+    border-bottom:1px solid var(--border);
+
+}
+
+.brand{
+
+    display:flex;
+    flex-direction:column;
+
+    gap:8px;
+
+}
+
+.est{
+
+    color:var(--sek);
+
+    letter-spacing:4px;
+
+    font-size:.75rem;
+
+}
+
+h1{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:2.8rem;
+
+    font-weight:700;
+
+    color:var(--sek);
+
+    letter-spacing:5px;
+
+}
+
+.claim{
+
+    font-size:.7rem;
+
+    letter-spacing:3px;
+
+    color:#888;
+
+}
+
+/* ========================= */
+/* NAVIGATION */
+/* ========================= */
+
+nav{
+
+    display:flex;
+
+    gap:18px;
+
+}
+
+nav button{
+
+    background:none;
+
+    border:1px solid var(--border);
+
+    color:var(--sek);
+
+    padding:14px 28px;
+
+    letter-spacing:3px;
+
+    font-size:.75rem;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+nav button:hover{
+
+    background:var(--sek);
+
+    color:var(--pri);
+
+}
+
+/* ========================= */
+/* WORKSPACE */
+/* ========================= */
+
+.workspace{
+
+    height:calc(100vh - 160px);
+
+    display:grid;
+
+    grid-template-columns:260px 1fr 300px;
+
+}
+
+/* ========================= */
+/* PANELS */
+/* ========================= */
+
+.left-panel,
+.right-panel{
+
+    background:var(--panel);
+
+    border-right:1px solid var(--border);
+
+    padding:40px;
+
+}
+
+.right-panel{
+
+    border-right:none;
+
+    border-left:1px solid var(--border);
+
+}
+
+h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    color:var(--sek);
+
+    letter-spacing:4px;
+
+    font-size:1.7rem;
+
+    margin-bottom:30px;
+
+}
+
+/* ========================= */
+/* TOOL BUTTONS */
+/* ========================= */
+
+.tool-btn{
+
+    width:100%;
+
+    background:none;
+
+    border:1px solid var(--border);
+
+    color:var(--ter);
+
+    padding:18px;
+
+    margin-bottom:14px;
+
+    cursor:pointer;
+
+    letter-spacing:3px;
+
+    transition:.25s;
+
+}
+
+.tool-btn:hover{
+
+    background:rgba(212,175,55,.08);
+
+    color:var(--sek);
+
+    border-color:var(--sek);
+
+}
+
+/* ========================= */
+
+hr{
+
+    border:none;
+
+    border-top:1px solid var(--border);
+
+    margin:25px 0;
+
+}
+
+/* ========================= */
+/* CANVAS */
+/* ========================= */
+
+.canvas-container{
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    background:#070707;
+
+}
+
+
+.canvas-frame{
+
+    width:95%;
+    height:95%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    overflow:hidden;
+
+}
+
+
+.canvas-container{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    overflow:hidden;
+
+}
+
+
+canvas{
+
+    max-width:100%;
+    max-height:100%;
+
+    background:#111;
+    border:1px solid rgba(212,175,55,.08);
+
+}
+
+.lower-canvas{
+
+    background:#111;
+
+}
+
+.upper-canvas{
+
+    background:transparent !important;
+
+}   
+
+/* ========================= */
+/* PROPERTIES */
+/* ========================= */
+
+.property{
+
+    margin-bottom:28px;
+
+}
+
+.property label{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    color:var(--sek);
+
+    letter-spacing:3px;
+
+    font-size:.75rem;
+
+}
+
+.property input,
+.property select{
+
+    width:100%;
+
+    background:#171717;
+
+    border:1px solid var(--border);
+
+    color:white;
+
+    padding:16px;
+
+    outline:none;
+
+}
+
+/* ========================= */
+/* FOOTER */
+/* ========================= */
+
+footer{
+
+    height:40px;
+
+    display:flex;
+
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 40px;
+
+    border-top:1px solid var(--border);
+
+    color:#777;
+
+    letter-spacing:3px;
+
+    font-size:.65rem;
+
+}
